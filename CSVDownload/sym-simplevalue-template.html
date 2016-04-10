@@ -1,0 +1,6 @@
+<div ng-style="{background: config.BackgroundColor, color: MultistateColor || config.TextColor}">
+    <div ng-show="config.ShowLabel">{{label}}</div>
+    <div id='valueCSV'>{{value}}</div>
+    <div ng-show="config.ShowTime">{{time}}</div>
+    <a id='downloadlink' class="btn" download='Download.csv' type='text/csv' ng-click="csvdownload()">Download CSV!</a>
+</div>
